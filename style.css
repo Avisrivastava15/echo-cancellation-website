@@ -24,7 +24,7 @@ html {
 }
 
 .logo-img {
-    height: 0px;  /* Adjust size as needed */
+    height: 40px;  /* Adjust size as needed */
     width: auto;
     border-radius: 50%;
 }
