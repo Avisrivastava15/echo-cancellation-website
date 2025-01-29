@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Cancellation Advanced Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Main Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="logo.png" alt="EchoX Logo" class="logo-img"> 
+                <a class="logo-text" href="#intro">EchoX</a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section (Hero Section) -->
+    <header id="intro" class="hero">
+        <div class="hero-content">
+            <h1>Echo Cancellation in Real-Time</h1>
+            <p>Experience how our advanced algorithms remove background noise and echo seamlessly.</p>
+            <a href="#demo" class="cta-button">Try Now</a>
+        </div>
+    </header>
+
+    <!-- How it Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="section-title">
+            <h2>How Echo Cancellation Works</h2>
+            <p class="section-description">A deep dive into the technology behind real-time echo removal.</p>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <h3>Step 1: Audio Capture</h3>
+                <p>We capture the input audio through your microphone, analyzing the background noise and echo.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2: Signal Processing</h3>
+                <p>Our algorithm processes the audio signals to identify and isolate the echo and noise.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3: Echo Removal</h3>
+                <p>We apply a series of filters to remove unwanted echoes and background noise in real-time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Demo Section -->
+    <section id="demo" class="demo">
+        <div class="section-title">
+            <h2>Interactive Demo</h2>
+            <p class="section-description">Click below to experience echo cancellation in action.</p>
+        </div>
+        <div class="demo-container">
+            <button id="startButton" class="btn-main">Start Echo Cancellation</button>
+            <p id="status">Click the button to start the process...</p>
+            <div id="visualization" class="hidden">
+                <div class="visualization-bar"></div>
+            </div>
+            <div id="loadingIndicator" class="hidden">
+                <div class="spinner"></div>
+                <!-- <p>Processing...</p> -->
+            </div>
+        </div>
+
+        <!-- After Processing Panel -->
+        <div class="after-processing" style="display:none;">
+            <i class="fas fa-volume-up speaker-icon"></i>
+            <a href="#" class="download-btn" id="download-btn" style="display:none;">Download Processed Audio</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+            <p class="section-description">Have any questions? Get in touch with us.</p>
+        </div>
+        <div class="contact-form">
+            <form id="contactForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn-main">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 EchoX - All Rights Reserved | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,340 @@
+/* Reset all styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+html {
+    scroll-behavior: smooth;  /* Enables smooth scroll */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* Space between logo and text */
+}
+
+.logo-img {
+    height: 0px;  /* Adjust size as needed */
+    width: auto;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #222;
+    padding: 20px;
+    z-index: 10;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00d4b8;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #4e9f9f, #7f66e0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background: #00d4b8;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 40px;  /* Moves the button down by 40px */
+}
+
+
+.cta-button:hover {
+    background: #00c4a7;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+    transition: ease 0.3s;
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.section-title h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Steps (How It Works) */
+.steps {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.step {
+    width: 30%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.step h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.step p {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Demo Section */
+.demo-container {
+    text-align: center;
+}
+
+.btn-main {
+    padding: 20px 40px;
+    background: #00d4b8;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-main:hover {
+    background: #00c4a7;
+}
+
+#visualization {
+    margin-top: 40px;
+    height: 200px;
+    background: #f1f1f1;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.visualization-bar {
+    height: 100%;
+    width: 0;
+    background: #00d4b8;
+    border-radius: 20px;
+    animation: increaseWidth 3s ease-out forwards;
+}
+
+@keyframes increaseWidth {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+/* Contact Section */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-form button {
+    background: #00d4b8;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #00c4a7;
+}
+
+/* Footer Styling */
+.footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #00d4b8;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.step:hover {
+    transform: scale(1.05);
+    transition: ease 0.3s; 
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);  /* Enhanced shadow for 3D effect */
+}
+
+/* After Processing Panel */
+.after-processing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+/* Speaker Icon Style */
+.speaker-icon {
+    font-size: 2.5em;
+    color: #00d4b8;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.speaker-icon:hover {
+    transform: scale(1.1);  /* Slight scaling on hover */
+}
+
+/* Download Button Style */
+.download-btn {
+    padding: 12px 20px;
+    background-color: #00d4b8;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #00c4a7;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Additional styles for after-processing */
+.after-processing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.speaker-icon {
+    font-size: 2.5em;
+    color: #00d4b8;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.speaker-icon:hover {
+    transform: scale(1.1);  /* Slight scaling on hover */
+}
+
+.download-btn {
+    padding: 12px 20px;
+    background-color: #00d4b8;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #00c4a7;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+#how-it-works, #demo {
+    padding-top: 70px;  /* Adjust based on navbar height */
+    margin-top: -70px;   /* Negative margin to counteract padding */
+}
+
+
